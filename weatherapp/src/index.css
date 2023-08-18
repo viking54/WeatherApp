@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Ubuntu&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/thunder.jpg");
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 100px;
+  color: white; /* Text color */
+  padding: 0 2vw;
+}
+
+.logo {
+  display: flex;
+  margin-top: -10px;
+  align-items: center;
+}
+.logo img {
+  height: 6vh;
+  width: 4vw;
+}
+
+.logo h1 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+h1 {
+  color: white;
+}
+
+/* Search Box Styles */
+.searchBox {
+  margin-top: -10px;
+  margin-right: -8vw;
+  transform: translate(-50%, 50%);
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 0.7vw;
+  display: flex;
+}
+
+.searchBox:hover > .searchInput {
+  width: 9.14vw;
+  padding: 0 0.6vw;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+/* Button Styles */
+.locationbutton {
+  display: flex;
+  margin-top: -10px;
+  align-items: center;
+  background-color: #0a0a0a;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.3vw 0.3vw;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 1px 1px 1px rgb(3, 233, 233);
+  font-size: 1vw;
+  gap: 0.3vw;
+}
+.material-icons-outlined {
+  font-size: 1vw;
+}
+
+.button-content {
+  font-weight: bolder;
+  margin-top: 5px;
+  font-size: 1.3vw;
+  color: rgb(255, 255, 255);
+}
+.card-container {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+  position: relative;
+  padding: 40px; /* Use padding instead of margin */
+  box-sizing: border-box; /* Include padding in the total width/height */
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 25%;
+  margin-right: 1.38vw;
+  height: 100%;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.card-content {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  margin-bottom: 1.3vw;
+}
+
+.icon {
+  align-items: center;
+  justify-content: center;
+}
+
+.card2-content {
+  justify-content: center;
+  padding: 0.7vw;
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+  background-color: rgb(9, 8, 8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.manga {
+  height: 100%;
+  width: 70%;
+}
+.newmanga {
+  display: flex;
+}
+
+.right-card {
+  height: 100%;
+  width: auto;
+  background-color: #201f1f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 1.39vw;
+}
+
+.right-card2 {
+  margin-top: 8px;
+  height: 100%;
+  width: fit-content;
+  border-radius: 15px;
+  background-color: #201f1f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 1.39vw;
+  margin-bottom: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+.rightcor-card {
+  overflow: auto;
+  margin-left: 7px;
+  min-height: 23.6vw;
+  width: fit-content;
+  background-color: #201f1f;
+  border-radius: 15px;
+  padding: 1vw;
+  animation: glowingBoxShadow 3s infinite;
+}
+@keyframes glowingBoxShadow {
+  0%,
+  100% {
+    box-shadow: 0px 0px rgb(0, 74, 233);
+  }
+  50% {
+    box-shadow: 0px 2px rgb(238, 72, 0);
+  }
+}
+.info {
+  margin: 3px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: scrollText 20s linear infinite;
+}
+
+.description {
+  overflow-x: hidden; /* Hide horizontal overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  height: 2.7vw;
+  background-color: rgb(32, 91, 154);
+  border-radius: 13px;
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+  font-size: 1.1vw;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  padding: 0 0.7vw; /* Add padding to prevent content from touching edges */
+
+  /* Animation */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start from the right side */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left side */
+  }
+}

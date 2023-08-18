@@ -1,0 +1,150 @@
+.upper {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+}
+
+.upper2 {
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.lower2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.airper {
+  margin-left: auto;
+  font-size: 1.1vw;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 0.347vw;
+}
+.air {
+  padding: 0.9vw;
+  margin: 0.7vw;
+  border-radius: 15px;
+  margin-left: 0;
+  height: auto;
+  width: auto;
+  background-color: rgb(9, 8, 8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.newair {
+  margin: 0.7vw;
+  margin-left: 0;
+  margin-top: 5px;
+  padding: 0.7vw;
+  border-radius: 15px;
+  width: 10.41vw;
+  width: 10.41vw;
+  background-color: rgb(9, 8, 8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.newair:hover {
+  box-shadow: 0px 0px 10px rgba(2, 239, 132, 0.5);
+}
+
+.newair2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.7vw;
+  margin-left: 0;
+  margin-top: 0.34vw;
+  padding: 0.55vw;
+  border-radius: 15px;
+  width: 6.94vw;
+  height: 3.7vw;
+  background-color: rgb(9, 8, 8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.newair3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.7vw;
+  margin-left: 0;
+  margin-top: 0.34vw;
+  padding: 0.55vw;
+  border-radius: 15px;
+  width: 6.98vw;
+  height: 3.15vw;
+  background-color: rgb(9, 8, 8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.newair2:hover {
+  box-shadow: 0px 0px 10px rgba(2, 239, 132, 0.5);
+}
+.air:hover {
+  box-shadow: 0px 0px 10px rgba(2, 239, 132, 0.5);
+}
+.labels {
+  font-size: 1vw;
+  color: #08f4dcde;
+}
+
+.vale {
+  font-size: 1.319vw;
+  color: antiquewhite;
+}
+
+.con {
+  display: flex;
+  align-items: center;
+}
+
+.newcon {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1.38vw;
+}
+.imgg {
+  width: 2.7vw;
+  height: 3.9vh;
+  margin-right: 0.7vw;
+}
+
+.sunimg {
+  width: 2.7vw;
+  height: 4.8vh;
+  margin-right: 0.7vw;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-left: 0.7vw;
+  gap: 0.2vw;
+  text-align: center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin-left: 0.7vw;
+  gap: 0.2vw;
+  text-align: center;
+}
+
+.cell {
+  padding: 0.3vw;
+  border-radius: 50px;
+  background-color: #131212;
+}
+
+.timeslab {
+  display: flex;
+  padding: 0.138vw;
+}
